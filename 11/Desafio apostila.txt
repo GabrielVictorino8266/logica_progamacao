@@ -1,0 +1,19 @@
+'Desafio Apostila
+
+TextWindow.WriteLine("Cálculo do IMC:")
+TextWindow.WriteLine("Digite seu peso:")
+peso = TextWindow.Read()
+TextWindow.WriteLine("Escreva sua altura em metros:")
+altura = TextWindow.Read()
+resultado = peso/(altura*altura)
+TextWindow.WriteLine("Seu IMC é:" + resultado)
+
+If resultado < 18.5 Then
+    TextWindoW.WriteLine("ABAIXO DO PESO IDEAL")
+EndIf
+
+If resultado > 25 Then
+    TextWindoW.WriteLine("ACIMA DO PESO IDEAL")
+Else
+    TextWindoW.WriteLine("PESO IDEAL!")
+EndIf

@@ -1,0 +1,15 @@
+GraphicsWindow.KeyDown = QuandoPressionarTecla'Quando uma tecla é pressionada, chama a sub-rotina "QuandoPressionarTecla"
+    'GraphicsWindow.KeyUp = QuandoSoltarTecla'Quando uma tecla é solta
+    
+'Declaração da sub-rotina
+Sub QuandoPressionarTecla
+    GraphicsWindow.ShowMessage("Hello", "Digitou algo?")
+EndSub
+
+Sub QuandoSoltarTecla
+    GraphicsWindow.ShowMessage("Bye", "Soltou algo?")
+
+EndSub
+
+
+

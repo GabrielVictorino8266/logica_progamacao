@@ -1,0 +1,11 @@
+'Temperatura
+
+TextWindow.WriteLine("Insira a temperatura em Celsius:")
+celsius = TextWindow.Read()
+
+kelvin = celsius + 273
+fahrenheit = celsius * 1.8 + 32
+
+TextWindow.WriteLine("A temperatura em Fahrenheit é: " + fahrenheit)
+TextWindow.WriteLine("A temperatura em Kelvin é: " + kelvin)
+TextWindow.WriteLine("A temperatura em Celsius é: " + celsius)

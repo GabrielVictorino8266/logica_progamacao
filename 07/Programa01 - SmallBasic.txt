@@ -1,0 +1,24 @@
+' Programa de IMC:
+TextWindow.WriteLine("Olá, bem-vindo!")
+TextWindow.WriteLine("Este programa se destina a calcular seu IMC.")
+TextWindow.WriteLine(" ")
+TextWindow.WriteLine("Digite seu peso:")
+peso = TextWindow.Read()
+TextWindow.WriteLine("Digite sua altura (Ex.: 1.80 // 1.56)")
+altura = TextWindow.Read()
+Resultado = peso / (altura * altura)
+TextWindow.WriteLine("Seu IMC é:")
+TextWindow.WriteLine(Resultado)
+TextWindow.WriteLine(" ")
+
+
+'Multiplicando 2 números
+Resultado = 0
+TextWindow.WriteLine("Olá, bem-vindo ao 2º Programa - Multiplicando dois números!")
+TextWindow.WriteLine("Digite o 1º valor:")
+Primeiro = TextWindow.Read()
+TextWindow.WriteLine("Digite o 2º valor:")
+Segundo = TextWindow.Read()
+Resultado = Primeiro * Segundo
+TextWindow.WriteLine("Resultado:")
+TextWindow.WriteLine(Resultado)

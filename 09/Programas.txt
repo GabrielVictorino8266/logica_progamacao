@@ -1,0 +1,31 @@
+' Desenhando com o SmallBasic
+GraphicsWindow.BackgroundColor = "Grey"'Define a cor do background
+'GraphicsWindow.BrushColor = "Black"'Cor de preenchimento
+'GraphicsWindow.DrawRectangle(20, 20, 40, 40)'Cria um retângulo (x, y, largura, altura)
+
+'Desenhando um retangulo colorido
+'GraphicsWindow.BrushColor = "Red"'Cor de preenchimento
+'GraphicsWindow.FillRectangle(60, 60, 300, 300)'Preenche o retângulo
+'GraphicsWindow.DrawRectangle(60, 60, 300, 300)'Desenha um retangulo sem preenchimento, apenas contorno.
+
+
+'Desafio 01
+GraphicsWindow.BrushColor = "Green"
+GraphicsWindow.FillRectangle(100, 70, 50, 200)
+GraphicsWindow.DrawRectangle(100, 70, 50, 200)'Desenha um retangulo sem preenchimento, apenas contorno.'
+
+'Desafio 02
+GraphicsWindow.PenColor = "Magenta"'Define a cor da caneta de desenho
+GraphicsWindow.PenWidth = 10 'Define a largura da caneta
+GraphicsWindow.DrawEllipse(200, 150, 120, 120)'Desenha uma elipse
+
+'Desenhando uma tartaruga
+
+Turtle.X = 300
+Turtle.Y = 300
+Turtle.Show()'Mostra a tartaruga na tela
+'O for é usado para que a tartarua faça movimento repetidos
+For contador = 1 to 50
+    Turtle.Move(3*contador)
+    Turtle.TurnRight()
+EndFor

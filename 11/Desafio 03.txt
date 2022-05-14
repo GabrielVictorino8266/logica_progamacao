@@ -1,0 +1,17 @@
+Turtle.Show()
+GraphicsWindow.KeyDown = QuandoTeclaPressionada
+
+Sub QuandoTeclaPressionada
+     TeclaPressionada = GraphicsWindow.LastKey
+     'GraphicsWindow.ShowMessage(TeclaPressionada,"" )
+
+    If TeclaPressionada = "ArrowLeft" Then
+        Turtle.TurnLeft()
+    ElseIf TeclaPressionada = "ArrowRight" Then
+        Turtle.TurnRight()
+    ElseIf TeclaPressionada = "ArrowUp" Then
+        Turtle.Move(10)
+    ElseIf TeclaPressionada = "ArrowDown" Then
+        Turtle.Move(-10)
+    EndIf
+EndSub

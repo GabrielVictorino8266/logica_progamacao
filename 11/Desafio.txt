@@ -1,0 +1,10 @@
+'Aula 11 - Calcula idade
+
+TextWindow.WriteLine("Insira o ano do seu nascimento")
+anoNascimento = TextWindow.Read()
+
+TextWindow.WriteLine("Insira o ano atual:")
+anoAtual = TextWindow.Read()
+
+idade = anoAtual - anoNascimento
+TextWindow.WriteLine("Sua idade é: " + idade)

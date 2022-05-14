@@ -1,0 +1,17 @@
+' Desafio aula 10
+GraphicsWindow.MouseMove = DesenhoMouse
+
+Sub DesenhoMouse
+    x = GraphicsWindow.MouseX
+    y = GraphicsWindow.MouseY
+
+    If (Mouse.IsLeftButtonDown) Then
+        GraphicsWindow.BrushColor = "Red"
+        GraphicsWindow.FillEllipse(x, y, 30, 30)
+    EndIf
+
+    If (Mouse.IsRightButtonDown) Then
+        GraphicsWindow.BrushColor = "Green"
+        GraphicsWindow.FillEllipse(x, y, 30, 30)
+    EndIf
+EndSub

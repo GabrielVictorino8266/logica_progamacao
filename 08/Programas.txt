@@ -1,0 +1,36 @@
+'1 Programa da aula 08
+TextWindow.WriteLine("Digite a senha:")
+Senha = 10
+Numero = TextWindow.Read()'Aguarda o input do usuário.
+
+While Numero <> Senha
+    TextWindow.WriteLine("Senha errada. Digite novamente:")
+    Numero = TextWindow.Read()
+EndWhile
+
+If Numero = Senha Then
+    TextWindow.WriteLine("Senha Correta! Bem-vindo!")
+EndIf
+
+TextWindow.WriteLine("")
+TextWindow.WriteLine("2º Programa: Senha finita.")
+
+tentativas = 0
+senha = "123gabriel"
+
+TextWindow.WriteLine("Digite uma senha:")
+valorDigitado = TextWindow.Read()
+
+While valorDigitado <> senha AND tentativas < 3
+    TextWindow.WriteLine("Senha errada. Digite novamente:")
+    tentativas = tentativas + 1
+    Numero = TextWindow.Read()
+EndWhile
+
+If valorDigitado = senha Then
+    TextWindow.WriteLine("Senha correta!")
+    TextWindow.WriteLine("Olá, seja bem-vindo!")
+Else
+    TextWindow.WriteLine("Limite de tentativas!")
+EndIf
+

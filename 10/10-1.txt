@@ -1,0 +1,18 @@
+'Desnhando com o Mouse
+GraphicsWindow.MouseMove = MovimentoMouse
+
+'Declara a Sub-rotina
+Sub MovimentoMouse
+    X = GraphicsWindow.MouseX'Atribui a "X"a posição x do Mouse
+    Y = GraphicsWindow.MouseY'Atribui a "Y"a posição y do Mouse
+
+    If (Mouse.IsLeftButtonDown) Then
+        GraphicsWindow.BrushColor = "Blue"
+        GraphicsWindow.FillEllipse(X, Y, 10, 10)
+    EndIf
+
+    If (Mouse.IsRightButtonDown) Then
+        GraphicsWindow.BrushColor = "Red"
+        GraphicsWindow.FillEllipse(X, Y, 20, 20)
+    EndIf
+EndSub
